@@ -17,6 +17,6 @@ def search_number(num):
 if __name__ == "__main__":
     print("\n=== Binary Search Algorithm ===\n")
     print(numbers)
-    user_input = int(input("\nEnter nubmer to search for: "))
+    user_input = int(input("\nEnter number to search for: "))
     search_number(user_input)
     
