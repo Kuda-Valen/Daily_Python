@@ -6,13 +6,17 @@ def search_number(num):
     i = 0
     found = False
     half = l // 2
-
-    if num >= numbers[half] and num in numbers:
-        print("Search last half")
-    elif num <= numbers[half] and num in numbers:
-        print("Seach first half")
-    else:
-        print("Number not found!!")
+    while found == False:
+        if num >= numbers[half] and num in numbers:
+            if num == numbers[half]:
+                print("Found")
+                found = True
+            else:
+                found = False
+        elif num <= numbers[half] and num in numbers:
+            print("Seach first half")
+        else:
+            print("Number not found!!")
 
 if __name__ == "__main__":
     print("\n=== Binary Search Algorithm ===\n")
